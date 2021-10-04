@@ -1,0 +1,330 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Merkle Challenge</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+    table {
+      border-spacing: 0;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    img {
+      border: 0;
+      border-width: 0;
+    }
+
+    a {
+      color: #277fd2;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 599.98px) {
+      .px-600-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .pt-600-0 {
+        padding-top: 0 !important;
+      }
+
+      img.third-img-last {
+        width: 200px !important;
+        max-width: 200px !important;
+      }
+
+      .d-600-none {
+        display: none !important;
+      }
+
+      .pr-large {
+        padding-right: 140px !important;
+      }
+
+      .center-text-mobile {
+        text-align: center !important;
+      }
+    }
+
+    @media screen and (max-width: 549.98px) {
+      .pt-550-0 {
+        padding-top: 0 !important;
+      }
+
+      .pr-large {
+        padding-right: 100px !important;
+      }
+    }
+
+    @media screen and (max-width: 499.98px) {
+      .pt-500-0 {
+        padding-top: 0 !important;
+      }
+
+      .pr-large {
+        padding-right: 60px !important;
+      }
+    }
+
+    @media screen and (max-width: 399.98px) {
+      .banner {
+        height: auto !important;
+        padding-top: 45px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .px-sm-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .pt-400-0 {
+        padding-top: 0 !important;
+      }
+
+      img.third-img {
+        width: 200px !important;
+        max-width: 200px !important;
+      }
+
+      .pr-large {
+        padding-right: 25px !important;
+      }
+    }
+
+    
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      body,
+      center,
+      table,
+      .darkmode-bg {
+        background: #2d2d2d !important;
+        color: #ffffff !important;
+      }
+
+      .darkmode-transparent {
+        background-color: transparent !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body
+  style="Margin:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-width:100%;background-color:#5d5d5d;">
+
+  <center style="width: 100%;table-layout:fixed;background-color: #333333;padding-bottom: 40px;">
+    <div style="max-width: 600px;background-color: #ffffff;box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
+
+      
+      <div
+        style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
+        
+      </div>
+      
+
+      <table align="center"
+        style="border-spacing:0;color:#3D3D3D;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #ffffff;Margin:0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;width: 100%;max-width: 600px;"
+        role="presentation">
+
+        <tr>
+          <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+            <table width="100%" style="border-spacing:0;" role="presentation">
+              <tr>
+                <td class="padding content"
+                  style="background-color:#ffffff;padding-top:5px;padding-right:0;padding-bottom:5px;padding-left:0;width:100%;text-align:center; width:600px;">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="padding: 0;">
+            <table width="100%" style="border-spacing:0;"      role="presentation">
+              <tr>
+                <td class="padding content"
+                  style="padding: 0; width:100%;text-align:center; width:600px;">
+
+                  <tr>
+                    <td style="font-size: 9px; padding: 10px 10px 0px 30px;">Morbi varius posuere lacinia. Sed semper <a href="#"
+                        style="text-decoration: none; color: #2d93f1;">bibendum</a> est id aliquet.</td>
+                    <td style="width:20%; font-size: 9px; text-align: right; padding: 10px 30px 0px 0px;">View in Browser</td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <table>
+            <table style="width:90%">
+                <tr>
+                  <td style="padding: 20px 0 0 30px;"><img src="abc-logo.jpg" width="150" style="padding: 0 0 10px -10px;" alt="Logo"></td>
+                  <table style="width:90%;">
+                    <tr>
+                      <th style="padding: 10px 0 20px 150px;">
+                        <p style="font-size: 15px;" >abc-emails.com | Visit our Blog</p>
+                      </th>
+                      <td style="padding: 0 0 20px 30px;"><img src="take-me-to-story.jpg" height="30" width="150" alt="Button Pic"></td>
+                    </tr>
+                  </table>
+                </tr>
+            </table>
+            <table style="width:90%">
+              <tr>
+                  <td
+                    style=" background-color: #277fd2; font-family: 'Open Sans','Helvetica Neue Light','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: rgb(255, 255, 255);">
+                    <h1 style="font-size: 35px; margin: 0; line-height: 1; padding: 5px 5px 0 25px; ">Suspendisse potenti</h1>
+                    <p style=" font-style: italic; font-size: 15px; margin: 0; line-height: 1.5; padding: 20px 0 20px 25px;">Aliquam erat
+                      volutpat. Nulla vitae tempor dui. Nulla facilisi.</p>
+                  </td>
+                
+                  <td align="right" valign="bottom" style="image-size: 100% 100%;"><img src="computer-pic.jpg" height="200" width="200" alt="computer-pic">
+                  </td>
+              </tr>
+            </table>
+        
+        <tr>
+          <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td style="padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;background-color: #ffffff;">
+            <table width="100%" style="border-spacing:0;" role="presentation">
+              <tr>
+                <td class="two-columns"
+                  style="padding-right:0;padding-left:0;font-size:0;text-align: center;background-color: #ffffff;">
+
+                  <table class="column"
+                    style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;"
+                    role="presentation">
+                    <tr>
+                      <td class="padding"
+                        style="padding-top: 20px;padding-right: 10px;padding-bottom: 20px;padding-left: 10px;background-color: #ffffff;">
+
+                        <table class="content" style="border-spacing:0;text-align: left;" role="presentation">
+                          <tr>
+                            <td style="background-color: #ffffff; padding: 10px 10px 10px 20px;
+                            ;">
+                              <p style="background-color:LightGray; width: 200px;  height: 520px; padding: 20px 10px 20px 20px;">Mauris in lacus sem <br><br>In efficitur at sapien at molis. Integer tincidunt sodales ex, eget molestie sem fringilla tristique. Class aptent
+                              taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquam velit erat, quis semper
+                              purus tempus id. Nullam id hendrerit orci.<br><br>Ut at dui id toror sagittis tempor. Fusce faucibus, libero a varius interdum, ligula risus tempor velit, id faucibus dui est vel mi**. Aliquam fringilla erat sapien, in auctor diam lobortis a. Nulla lacus uma, ornare id commodo ut, bibendum sed nibh.<br><br> <img src="phone-pic.jpg" alt="phone pic" width="190px" height="150px" style="line-height: .5;"></p>
+                              
+                            </td>
+                          </tr>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="column"
+                    style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;"
+                    role="presentation">
+                    <tr>
+                      <td class="padding"
+                        style="padding-top: 0px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;background-color: #ffffff;">
+
+                        <table class="content" style="border-spacing:0; text-align: left;" role="presentation">
+                          <tr style="">
+                            <td
+                              style="padding: 40px 0px 50px 0px; background-color: #ffffff; ">
+                              <p style="font-size: 15px;font-weight: bold;color: #000000;"><a href="#">Dear Customer</a></p>
+                              <p style="font-size: 15px;color: #000000;">Lorem ipsum dolor sit amet consectetur adipisicing elit dui. Nulla facilisi, aliquam repellendus pariatur quod laboriosam atque eos
+                              odio dignissimos Nulla facilisi atque eos atque eos<a href="#"> <u>Nam a lacus mauris</u>.</a> saepe sit adipisci voluptate officia praesentium ab obcaecati vitae rem aspernatur totam tempora.</p>
+                            <p>
+                              Pellentes posuere ligula ut masssa placerat. Ut semper dui et nisl congue, sed congue metus varius placerat vestibulum. Call us at <a href="#">(888) 987-6543</a> today
+                            </tr>
+                                <tr>
+                              <td>
+                                <img src="cheat.jpeg" alt="bullet point pic" style="height: 235px; width: 280px; margin: -10px;">
+                              </td>
+                              </tr>
+                            </p>
+                            </td>
+                            </tr>
+                          </tr>
+                          
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+    <table width="100%" style="border-spacing:0;    background-color: #277fd2;" role="presentation">
+      <tr>
+        <td class="padding content"
+          style="padding-top:13px;padding-bottom:10px;padding-right:50px;padding-left:20px;width:100%;text-align:right;background-color: #277fd2;">
+          <img src="facebook.jpg" alt="">
+          <img src="twiter.jpg" alt="">
+          <img src="instagram.jpg" alt="">
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" style="border-spacing:0; background-color: #dddddd; padding: 0 50px 0 50px;" role="presentation">
+      <tr>
+        <td
+          style="padding-top:22px;padding-right:20px;padding-bottom:50px;padding-left:20px;width:100%;text-align:center;font-size: 10px; background-color: #dddddd;">
+          
+          <p style="font-size:15px; line-height: 23px; padding-bottom: 5px;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? Quae eveniet
+            expedita molestiae incidunt ut doloremque odit provident itaque! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? Quae eveniet
+            expedita molestiae incidunt ut <u>doloremque odit</u> provident itaque!</p>
+
+            <p style="font-size:15px; line-height: 23px; padding-bottom: 5px;">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? <b>Quae eveniet. incidunt ut doloremque expedita molestiae odit provident itaque incidunt ut doloremque odit!</b></p>
+
+              <p style="font-size:15px; line-height: 23px; padding-bottom: 5px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? Quae eveniet
+                expedita molestiae incidunt ut doloremque odit provident itaque! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? Quae eveniet
+                expedita molestiae incidunt ut doloremque odit <b>provident itaque</b>! In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? Quae eveniet
+                expedita molestiae incidunt ut doloremque odit provident itaque! In repellat ab deleniti iure ea! Ea ullam repudiandae eum voluptates quasi? Quae eveniet
+                expedita molestiae incidunt ut doloremque odit provident repellat itaque!</p>
+
+                <p style="font-size:15px; line-height: 23px; padding-bottom: 5px;">&copy 2017 Vivamus ultricies tempus gravida.  123 Fake Avenue, Big Town, USA 01010.</p>
+
+          </td>
+        </tr>
+      </table>
+
+
+      </table>
+
+    </div>
+  </center>
+</body>
+
+</html>
